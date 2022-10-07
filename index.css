@@ -1,3 +1,8 @@
 body {
     background-color: royalblue;
 }
+
+.test {
+    margin: 0 auto;
+    background-color: aqua;
+}
