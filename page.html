@@ -1,7 +1,28 @@
 <!DOCTYPE html>
 <html>
 <body>
-<h1>Testing area this is for testing..</h1>
-<button>Button1</button>
+<h1>Settings</h1>
+<button>Test Button1</button>
+<button>Test Button2</button>
+<button onclick="myFunction()">Toggle dark mode</button>
+<style>
+body {
+  padding: 25px;
+  background-color: white;
+  color: black;
+  font-size: 25px;
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+</style>
+<script>
+function myFunction() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
+</script>
 </body>
 </html>
