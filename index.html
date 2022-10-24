@@ -19,4 +19,60 @@
 </style>
 </body>
 </html>
+<style>
+  #content.light-mode {
+    background-color: royalblue;
+    color: #171717;
+  }
+  #contant.light-mode a {
+    color: royalblue;
+  }
+  #content.light-mode path {
+    fill: royalblue;
+  }
+  #content.dark-mode {
+    background-color: #171717;
+    color: #ffffff;
+  }
+  #content.dark-mode a {
+    color: #ffffff;
+  }
+  #content.dark-mode a.w--current {
+   color: #707AFF;
+  }
+    
+  #content.dark-mode path {
+    fill: #2f2f2f;
+  }
+  </style>
+    
+  
+    
+    <script>
+    function setThemeFromCookie() {
+     const themeState = document.getElementById('content');
+     themeState.className = isThemeSelected() ? 'dark-mode' : 'light-mode';
+    }
+    function setThemeSwitchState() {
+     document.getElementById('toggleTheme').checked = isThemeSelected();
+    }
+    function isThemeSelected() {
+     return document.cookie.match(/theme=dark/i) != null;
+    }
+    function toggleTheme() {
+     const themeState = document.getElementById('content');
+     const currentState = themeState.className;
+     const newState = themeState.className == 'dark-mode' ? 'light-mode' : 'dark-mode';
+     themeState.className = newState;
+     document.cookie = 'theme=' + (newState == 'light-mode' ? 'light' : 'dark');
+    }
+    (function() {
+     setThemeFromCookie();
+     setThemeSwitchState();
+     document.getElementById('toggleTheme').onchange=toggleTheme;
+    })();
+    </script>
+    
+  </body>
+  </html>
 
