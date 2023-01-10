@@ -30,7 +30,6 @@
     background-color:green;
     border: 4px solid black;
     cursor: pointer;
-    down: 40px
   }
   #normalMode:hover {
     background-color:lightgreen;
@@ -173,7 +172,7 @@ function loop() {
       
       // snake occupies same space as a body part. reset game
       if (cell.x === snake.cells[i].x && cell.y === snake.cells[i].y) {
-        if(gamemode!="invincible") {
+        if(gamemode != 'invincible') {
         scoreVar = 0;
         snake.x = 160;
         snake.y = 160;
