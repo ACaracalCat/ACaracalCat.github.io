@@ -173,7 +173,7 @@ function loop() {
       
       // snake occupies same space as a body part. reset game
       if (cell.x === snake.cells[i].x && cell.y === snake.cells[i].y) {
-        if(gamemode == "normal") {
+        if(gamemode == "normal" or gamemode == "apple") {
         scoreVar = 0;
         snake.x = 160;
         snake.y = 160;
