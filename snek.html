@@ -46,6 +46,8 @@ var context = canvas.getContext('2d');
 
 var grid = 16;
 var count = 0;
+
+let nom = new Audio('nom.mp3')
   
 var snake = {
   x: 160,
@@ -149,6 +151,7 @@ function loop() {
 
     // snake ate apple
     if (cell.x === apple.x && cell.y === apple.y) {
+      nom.play()
       snake.maxCells++;
       scoreVar += 1
 
@@ -158,6 +161,8 @@ function loop() {
     }
     if (cell.x === apple2.x && cell.y === apple2.y) {
     if(gamemode=="apple") {
+
+      nom.play()
       snake.maxCells++;
       scoreVar += 1
 
@@ -173,6 +178,8 @@ function loop() {
       // snake occupies same space as a body part. reset game
       if (cell.x === snake.cells[i].x && cell.y === snake.cells[i].y) {
         if(gamemode != 'invincible') {
+        let oof = new Audio('oof.mp3')
+        oof.play()
         scoreVar = 0;
         snake.x = 160;
         snake.y = 160;
