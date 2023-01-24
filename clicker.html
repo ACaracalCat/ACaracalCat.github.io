@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Clicker</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+  <script src='main.js'></script>
+</head>
+<body>
+    <a href="index.html">Home</a>
+    <h1 id="score">Score: 0</h1>
+    <div class="button-container-div">
+        <button onclick="click()">Click me!</button>   
+    </div>
+</body>
+</html>
+
+<style>
+        .button-container-div {
+            width: 100vw;
+            height: 80vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+    body {
+        text-align: center;
+    }
+    button {
+        background-color: #7289da;
+        outline: 4px solid black;
+        cursor: pointer;
+        
+    }
+    button:hover {
+        background-color: #a0acd7;
+        outline: 4px solid black;
+        cursor: pointer;
+    }
+</style>
+
+<script>
+    var score = 0
+
+    function click() {
+        score += 1
+        
+    }
+
+window.requestAnimationFrame(gameLoop);
+
+function draw() {
+    document.getElementById("score").innerHTML = 'Score: ' + score;
+}
+
+function gameLoop() {
+    draw();
+    window.requestAnimationFrame(gameLoop);
+}
+</script>
