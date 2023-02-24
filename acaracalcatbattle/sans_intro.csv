@@ -1,6 +1,6 @@
 0,SansAnimation,,,,,,,,
 0,SansHead,ClosedEyes,,,,,,,
-0,SansText,hello! you are now fighting the creator of this website,,,,,,,
+0,SansText,you are now fighting the creator of this website,,,,,,,
 0,BlackScreen,1,,,,,,,
 0,Sound,Flash,,,,,,,
 0.06666,BlackScreen,0,,,,,,,
@@ -21,11 +21,10 @@
 0.4,Sound,GasterBlaster,1.4,,,,,,
 0.4,SineBones,20,-24,360,25,,,,
 1.1,SansAnimation,,,,,,,,
+0,GasterBlaster,1,300,0,470,250,446,0.7,0.6
 0,GasterBlaster,1,0,0,189,246,0,0.333,0.26666
-0,GasterBlaster,1,640,480,449,366,180,0.333,0.26666
 0,GasterBlaster,1,0,0,259,166,90,0.333,0.26666
 0,GasterBlaster,1,640,480,449,366,180,0.333,0.26666
-0,GasterBlaster,1,0,0,189,246,0,0.333,0.26666
 0,GasterBlaster,1,640,480,379,446,270,0.333,0.26666
 0.9,GasterBlaster,1,0,0,189,176,45,0.333,0.26666
 0,GasterBlaster,1,640,0,449,176,135,0.333,0.26666
@@ -34,7 +33,6 @@
 0.9,GasterBlaster,1,0,0,189,246,0,0.333,0.26666
 0,GasterBlaster,1,0,0,259,166,90,0.333,0.26666
 0,GasterBlaster,1,640,480,449,366,180,0.333,0.26666
-0,GasterBlaster,1,0,0,189,246,0,0.333,0.26666
 0,GasterBlaster,1,640,480,379,446,270,0.333,0.26666
 0.7,GasterBlaster,2,0,240,139,306,0,0.666,0.5
 0,GasterBlaster,2,640,240,499,306,180,0.666,0.5
