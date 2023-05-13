@@ -1,5 +1,5 @@
 body {
-    background-color: #424549;
+    background-color: #041529;
     font-family: Arial, Helvetica, sans-serif
 }
 p {
@@ -15,6 +15,18 @@ h1 {
     text-align:center
 }
 
-a {
-    color:red
-}
+@keyframes link {
+    0%   {color:red;}
+    25%  {color:orange;}
+    50%  {color:green;}
+    75% {color:blue;}
+    100% {color:red;}
+  }
+  a {
+    color: red;
+    animation-name: link;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    font-family:Arial, Helvetica, sans-serif
+
+  }
