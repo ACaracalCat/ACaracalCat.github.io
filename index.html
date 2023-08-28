@@ -12,10 +12,9 @@
   <h1>Games</h1>
   <a href="snek.html">SNEK</a><br>
   <a href="clicker.html">Clicker</a><br>
-  <a href="retrobowl.html">Retrobowl</a><br> <p>(<i>IF IT SAYS IT DOESNT CONNECT, ITS RESTRICTED! IM TRYING TO FIND A WAY TO BYPASS</i>)</p>
-<a href="killfurry.html">Kill Furries Simulator</a><br>
+  <a href="killfurry.html">Kill Furries Simulator</a><br>
   <a href="sans-fight-battle-sim/index.html">Sans Fight</a><br>
-  <a href="acaracalcatbattle/index.html">Fight troll sans</a><br>
+  <a href="acaracalcatbattle/index.html">Fight troll sans NEW ATTACKS</a><br>
   <a href="MAZEIndex.html">MAZE</a><br>
   <a href="racingsimulator.html">Racing Simulator</a>
   <h1>Resources</h1>
@@ -27,3 +26,49 @@
   <a href="admin.html">Admin Panel</a>
 </body>
 </html>
+
+<div id="bubble-wrapper">
+  <div class="bubble"></div>
+</div>
+
+<style>
+   @keyframes wave {
+    from, to {
+      transform: translate(-50%, 0);
+    }
+
+    50% {
+      transform: translate(-50%, -20%);
+    }
+  }
+  #bubble-wrapper {
+    height: 100%;
+    width: 100%;
+
+    position: fixed;
+    bottom: 0px;
+
+    overflow: hidden;
+    pointer-events: none;
+  }
+  .bubble {
+    height: max(300px, 30vw);
+    width: max(300, 30vw);
+
+    background-color: rgb(rgb(9, 29, 47));
+    border-radius: 100%;
+
+    position: absolute;
+    left: 50%;
+    top: 100%;
+
+    animation: wave 2s ease-in-out infinite;
+  }
+ 
+</style>
+
+<script>
+  const animationBubble = x => {
+    const bubble = document.createElement("div");
+  }
+</script>
